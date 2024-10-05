@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/6o9d31ohf2xp17mb?svg=true)](https://ci.appveyor.com/project/Professor-Severus-Snape/ra-state-layouts)
+
 # Расположение товаров
 
 Вам необходимо сделать приложение для отображения товаров в интернет-магазине. Заказчик хочет, чтобы пользователь мог увидеть товары в виде карточек или в виде списка, в зависимости от того, какое расположение он выберет:
