@@ -1,3 +1,5 @@
+import Store from './components/Store/Store';
+
 export default function App() {
-  return <></>;
+  return <Store />;
 }
