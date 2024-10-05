@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './shopItem.css';
 
 // компонент карточки товара, отображаемого в виде списка:
@@ -11,6 +13,18 @@ const ShopItem = ({ data }) => {
       <button className="shop-item__btn" type="button">ADD TO CART</button>
     </li>
   );
+};
+
+// валидация пропсов:
+ShopItem.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default ShopItem;

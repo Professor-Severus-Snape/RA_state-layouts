@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './shopCard.css';
 
 // компонент карточки товара, отображаемого в виде сетки:
@@ -14,6 +16,18 @@ const ShopCard = ({ data }) => {
       </div>
     </li>
   );
+};
+
+// валидация пропсов:
+ShopCard.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default ShopCard;

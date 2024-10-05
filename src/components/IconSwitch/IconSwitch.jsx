@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './iconSwitch.css';
 
 // компонент иконки отображения товаров на странице:
@@ -11,6 +13,12 @@ const IconSwitch = ({ icon, onSwitch }) => {
       onClick={onSwitch} // вариант без аргумента
     />
   );
+};
+
+// валидация пропсов:
+IconSwitch.propTypes = {
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
 };
 
 export default IconSwitch;
