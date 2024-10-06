@@ -14,12 +14,6 @@ import './store.css';
 const Store = () => {
   const [icon, setIcon] = useState(viewListIcon); // состояние отображаемой иконки
 
-  // 1ый вариант -> с аргументом:
-  // const handler = (chosenIcon) => {
-  //   setIcon(chosenIcon === viewListIcon ? viewModuleIcon : viewListIcon);
-  // }
-
-  // 2ой вариант -> без аргумента (смысл туда-сюда передавать одно и тоже?):
   const handler = () => {
     setIcon(icon === viewListIcon ? viewModuleIcon : viewListIcon);
   };

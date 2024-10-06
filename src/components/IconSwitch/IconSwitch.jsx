@@ -9,8 +9,7 @@ const IconSwitch = ({ icon, onSwitch }) => {
       className="icon-switch"
       src={icon}
       alt="icon switch"
-      // onClick={() => onSwitch(icon)} // вариант с аргументом
-      onClick={onSwitch} // вариант без аргумента
+      onClick={onSwitch}
     />
   );
 };

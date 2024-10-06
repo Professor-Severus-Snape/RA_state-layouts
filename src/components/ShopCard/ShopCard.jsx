@@ -20,14 +20,12 @@ const ShopCard = ({ data }) => {
 
 // валидация пропсов:
 ShopCard.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+  })
 };
 
 export default ShopCard;
